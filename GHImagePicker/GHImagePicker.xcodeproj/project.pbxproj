@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0406D0352088A9C400B5F316 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D0342088A9C400B5F316 /* AppDelegate.m */; };
+		0406D0382088A9C400B5F316 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D0372088A9C400B5F316 /* ViewController.m */; };
+		0406D03B2088A9C400B5F316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0406D0392088A9C400B5F316 /* Main.storyboard */; };
+		0406D03D2088A9C400B5F316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0406D03C2088A9C400B5F316 /* Assets.xcassets */; };
+		0406D0402088A9C400B5F316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0406D03E2088A9C400B5F316 /* LaunchScreen.storyboard */; };
+		0406D0432088A9C400B5F316 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D0422088A9C400B5F316 /* main.m */; };
+		0406D04D2088A9C400B5F316 /* GHImagePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D04C2088A9C400B5F316 /* GHImagePickerTests.m */; };
+		0406D0582088A9C400B5F316 /* GHImagePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D0572088A9C400B5F316 /* GHImagePickerUITests.m */; };
+		0406D0682088B5F500B5F316 /* GHAssetImageGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D0672088B5F500B5F316 /* GHAssetImageGeneratorViewController.m */; };
+		0406D06D2088BB8100B5F316 /* GHAssetImageGeneratorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D06C2088BB8100B5F316 /* GHAssetImageGeneratorView.m */; };
+		0406D0722088BBA900B5F316 /* GHBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D0712088BBA900B5F316 /* GHBaseView.m */; };
+		0406D0762088BC3700B5F316 /* GHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D0752088BC3700B5F316 /* GHBaseViewController.m */; };
+		0406D0792088BCFA00B5F316 /* GHBaseCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D0782088BCFA00B5F316 /* GHBaseCCell.m */; };
+		0406D07C2088BD7900B5F316 /* GHBaseCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D07B2088BD7900B5F316 /* GHBaseCView.m */; };
+		0406D07F2088BF1100B5F316 /* UIView+GHAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D07E2088BF1100B5F316 /* UIView+GHAdd.m */; };
+		0406D0882088CDDA00B5F316 /* GHImgCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D0872088CDDA00B5F316 /* GHImgCCell.m */; };
+		2A97A393EEE4F3E3D50D59E9 /* libPods-GHImagePickerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE458E07F3996D1CA334AC8 /* libPods-GHImagePickerTests.a */; };
+		35C8B061F981C03AE7644F81 /* libPods-GHImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA1F8735CCCBC89DACE786A /* libPods-GHImagePicker.a */; };
+		4A55A49664439F405635460A /* libPods-GHImagePickerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D2F568A725418464F872E7 /* libPods-GHImagePickerUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0406D0492088A9C400B5F316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0406D0282088A9C400B5F316 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0406D02F2088A9C400B5F316;
+			remoteInfo = GHImagePicker;
+		};
+		0406D0542088A9C400B5F316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0406D0282088A9C400B5F316 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0406D02F2088A9C400B5F316;
+			remoteInfo = GHImagePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0406D0302088A9C400B5F316 /* GHImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0406D0332088A9C400B5F316 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0406D0342088A9C400B5F316 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0406D0362088A9C400B5F316 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0406D0372088A9C400B5F316 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0406D03A2088A9C400B5F316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0406D03C2088A9C400B5F316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0406D03F2088A9C400B5F316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0406D0412088A9C400B5F316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0406D0422088A9C400B5F316 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0406D0482088A9C400B5F316 /* GHImagePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHImagePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0406D04C2088A9C400B5F316 /* GHImagePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHImagePickerTests.m; sourceTree = "<group>"; };
+		0406D04E2088A9C400B5F316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0406D0532088A9C400B5F316 /* GHImagePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHImagePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0406D0572088A9C400B5F316 /* GHImagePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHImagePickerUITests.m; sourceTree = "<group>"; };
+		0406D0592088A9C400B5F316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0406D0662088B5F500B5F316 /* GHAssetImageGeneratorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAssetImageGeneratorViewController.h; sourceTree = "<group>"; };
+		0406D0672088B5F500B5F316 /* GHAssetImageGeneratorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAssetImageGeneratorViewController.m; sourceTree = "<group>"; };
+		0406D0692088B8D600B5F316 /* GHDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHDefine.h; sourceTree = "<group>"; };
+		0406D06A2088B93D00B5F316 /* GHImage.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHImage.pch; sourceTree = "<group>"; };
+		0406D06B2088BB8100B5F316 /* GHAssetImageGeneratorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAssetImageGeneratorView.h; sourceTree = "<group>"; };
+		0406D06C2088BB8100B5F316 /* GHAssetImageGeneratorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAssetImageGeneratorView.m; sourceTree = "<group>"; };
+		0406D0702088BBA900B5F316 /* GHBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHBaseView.h; sourceTree = "<group>"; };
+		0406D0712088BBA900B5F316 /* GHBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHBaseView.m; sourceTree = "<group>"; };
+		0406D0742088BC3700B5F316 /* GHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHBaseViewController.h; sourceTree = "<group>"; };
+		0406D0752088BC3700B5F316 /* GHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHBaseViewController.m; sourceTree = "<group>"; };
+		0406D0772088BCFA00B5F316 /* GHBaseCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHBaseCCell.h; sourceTree = "<group>"; };
+		0406D0782088BCFA00B5F316 /* GHBaseCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHBaseCCell.m; sourceTree = "<group>"; };
+		0406D07A2088BD7900B5F316 /* GHBaseCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHBaseCView.h; sourceTree = "<group>"; };
+		0406D07B2088BD7900B5F316 /* GHBaseCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHBaseCView.m; sourceTree = "<group>"; };
+		0406D07D2088BF1100B5F316 /* UIView+GHAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GHAdd.h"; sourceTree = "<group>"; };
+		0406D07E2088BF1100B5F316 /* UIView+GHAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GHAdd.m"; sourceTree = "<group>"; };
+		0406D0862088CDDA00B5F316 /* GHImgCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHImgCCell.h; sourceTree = "<group>"; };
+		0406D0872088CDDA00B5F316 /* GHImgCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHImgCCell.m; sourceTree = "<group>"; };
+		2611BD12F86CF9FB145495DA /* Pods-GHImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHImagePicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-GHImagePicker/Pods-GHImagePicker.release.xcconfig"; sourceTree = "<group>"; };
+		3CE458E07F3996D1CA334AC8 /* libPods-GHImagePickerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GHImagePickerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5724DC1B9ADF1918CFB45A /* Pods-GHImagePickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHImagePickerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GHImagePickerTests/Pods-GHImagePickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		90D2F568A725418464F872E7 /* libPods-GHImagePickerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GHImagePickerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDA44B2933A4A4D29D89AC6 /* Pods-GHImagePickerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHImagePickerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GHImagePickerUITests/Pods-GHImagePickerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEA1F8735CCCBC89DACE786A /* libPods-GHImagePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GHImagePicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8799773AB4C026DFAB7EE13 /* Pods-GHImagePickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHImagePickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GHImagePickerTests/Pods-GHImagePickerTests.release.xcconfig"; sourceTree = "<group>"; };
+		DEAE943FE580B0151A265F6B /* Pods-GHImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHImagePicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GHImagePicker/Pods-GHImagePicker.debug.xcconfig"; sourceTree = "<group>"; };
+		F28BE08EE0151393F278B177 /* Pods-GHImagePickerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHImagePickerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GHImagePickerUITests/Pods-GHImagePickerUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0406D02D2088A9C400B5F316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C8B061F981C03AE7644F81 /* libPods-GHImagePicker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0406D0452088A9C400B5F316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A97A393EEE4F3E3D50D59E9 /* libPods-GHImagePickerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0406D0502088A9C400B5F316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A55A49664439F405635460A /* libPods-GHImagePickerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0406D0272088A9C400B5F316 = {
+			isa = PBXGroup;
+			children = (
+				0406D0322088A9C400B5F316 /* GHImagePicker */,
+				0406D04B2088A9C400B5F316 /* GHImagePickerTests */,
+				0406D0562088A9C400B5F316 /* GHImagePickerUITests */,
+				0406D0312088A9C400B5F316 /* Products */,
+				8F6D322EE32B9931862B86EA /* Pods */,
+				50FFC9DB301F5F202AEA09E2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0406D0312088A9C400B5F316 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0406D0302088A9C400B5F316 /* GHImagePicker.app */,
+				0406D0482088A9C400B5F316 /* GHImagePickerTests.xctest */,
+				0406D0532088A9C400B5F316 /* GHImagePickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0406D0322088A9C400B5F316 /* GHImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				0406D0652088A9CB00B5F316 /* lib */,
+				0406D0332088A9C400B5F316 /* AppDelegate.h */,
+				0406D0342088A9C400B5F316 /* AppDelegate.m */,
+				0406D0362088A9C400B5F316 /* ViewController.h */,
+				0406D0372088A9C400B5F316 /* ViewController.m */,
+				0406D0392088A9C400B5F316 /* Main.storyboard */,
+				0406D03C2088A9C400B5F316 /* Assets.xcassets */,
+				0406D03E2088A9C400B5F316 /* LaunchScreen.storyboard */,
+				0406D0412088A9C400B5F316 /* Info.plist */,
+				0406D0422088A9C400B5F316 /* main.m */,
+			);
+			path = GHImagePicker;
+			sourceTree = "<group>";
+		};
+		0406D04B2088A9C400B5F316 /* GHImagePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0406D04C2088A9C400B5F316 /* GHImagePickerTests.m */,
+				0406D04E2088A9C400B5F316 /* Info.plist */,
+			);
+			path = GHImagePickerTests;
+			sourceTree = "<group>";
+		};
+		0406D0562088A9C400B5F316 /* GHImagePickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0406D0572088A9C400B5F316 /* GHImagePickerUITests.m */,
+				0406D0592088A9C400B5F316 /* Info.plist */,
+			);
+			path = GHImagePickerUITests;
+			sourceTree = "<group>";
+		};
+		0406D0652088A9CB00B5F316 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0406D06E2088BB9200B5F316 /* Base */,
+				0406D0662088B5F500B5F316 /* GHAssetImageGeneratorViewController.h */,
+				0406D0672088B5F500B5F316 /* GHAssetImageGeneratorViewController.m */,
+				0406D06B2088BB8100B5F316 /* GHAssetImageGeneratorView.h */,
+				0406D06C2088BB8100B5F316 /* GHAssetImageGeneratorView.m */,
+				0406D0692088B8D600B5F316 /* GHDefine.h */,
+				0406D06A2088B93D00B5F316 /* GHImage.pch */,
+				0406D0862088CDDA00B5F316 /* GHImgCCell.h */,
+				0406D0872088CDDA00B5F316 /* GHImgCCell.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		0406D06E2088BB9200B5F316 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0406D0732088BC1300B5F316 /* VC */,
+				0406D06F2088BB9800B5F316 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0406D06F2088BB9800B5F316 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0406D0702088BBA900B5F316 /* GHBaseView.h */,
+				0406D0712088BBA900B5F316 /* GHBaseView.m */,
+				0406D0772088BCFA00B5F316 /* GHBaseCCell.h */,
+				0406D0782088BCFA00B5F316 /* GHBaseCCell.m */,
+				0406D07A2088BD7900B5F316 /* GHBaseCView.h */,
+				0406D07B2088BD7900B5F316 /* GHBaseCView.m */,
+				0406D07D2088BF1100B5F316 /* UIView+GHAdd.h */,
+				0406D07E2088BF1100B5F316 /* UIView+GHAdd.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0406D0732088BC1300B5F316 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				0406D0742088BC3700B5F316 /* GHBaseViewController.h */,
+				0406D0752088BC3700B5F316 /* GHBaseViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		50FFC9DB301F5F202AEA09E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1F8735CCCBC89DACE786A /* libPods-GHImagePicker.a */,
+				3CE458E07F3996D1CA334AC8 /* libPods-GHImagePickerTests.a */,
+				90D2F568A725418464F872E7 /* libPods-GHImagePickerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F6D322EE32B9931862B86EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEAE943FE580B0151A265F6B /* Pods-GHImagePicker.debug.xcconfig */,
+				2611BD12F86CF9FB145495DA /* Pods-GHImagePicker.release.xcconfig */,
+				5D5724DC1B9ADF1918CFB45A /* Pods-GHImagePickerTests.debug.xcconfig */,
+				D8799773AB4C026DFAB7EE13 /* Pods-GHImagePickerTests.release.xcconfig */,
+				ABDA44B2933A4A4D29D89AC6 /* Pods-GHImagePickerUITests.debug.xcconfig */,
+				F28BE08EE0151393F278B177 /* Pods-GHImagePickerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0406D02F2088A9C400B5F316 /* GHImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0406D05C2088A9C400B5F316 /* Build configuration list for PBXNativeTarget "GHImagePicker" */;
+			buildPhases = (
+				48072141AB483BD2D68D4700 /* [CP] Check Pods Manifest.lock */,
+				0406D02C2088A9C400B5F316 /* Sources */,
+				0406D02D2088A9C400B5F316 /* Frameworks */,
+				0406D02E2088A9C400B5F316 /* Resources */,
+				A224B320A82C6403ABC16164 /* [CP] Embed Pods Frameworks */,
+				27215ACF6883C080EA07121D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GHImagePicker;
+			productName = GHImagePicker;
+			productReference = 0406D0302088A9C400B5F316 /* GHImagePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0406D0472088A9C400B5F316 /* GHImagePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0406D05F2088A9C400B5F316 /* Build configuration list for PBXNativeTarget "GHImagePickerTests" */;
+			buildPhases = (
+				05F350C509A312F07DEEEA30 /* [CP] Check Pods Manifest.lock */,
+				0406D0442088A9C400B5F316 /* Sources */,
+				0406D0452088A9C400B5F316 /* Frameworks */,
+				0406D0462088A9C400B5F316 /* Resources */,
+				68B8AD81BF328E0C04EAB05A /* [CP] Embed Pods Frameworks */,
+				04420141877637B84321471A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0406D04A2088A9C400B5F316 /* PBXTargetDependency */,
+			);
+			name = GHImagePickerTests;
+			productName = GHImagePickerTests;
+			productReference = 0406D0482088A9C400B5F316 /* GHImagePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0406D0522088A9C400B5F316 /* GHImagePickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0406D0622088A9C400B5F316 /* Build configuration list for PBXNativeTarget "GHImagePickerUITests" */;
+			buildPhases = (
+				F0E15569D2579D1F38F73544 /* [CP] Check Pods Manifest.lock */,
+				0406D04F2088A9C400B5F316 /* Sources */,
+				0406D0502088A9C400B5F316 /* Frameworks */,
+				0406D0512088A9C400B5F316 /* Resources */,
+				6B1EA63B7BE4AE4EDB78E668 /* [CP] Embed Pods Frameworks */,
+				BA51DD6C490AD4868B0C07C1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0406D0552088A9C400B5F316 /* PBXTargetDependency */,
+			);
+			name = GHImagePickerUITests;
+			productName = GHImagePickerUITests;
+			productReference = 0406D0532088A9C400B5F316 /* GHImagePickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0406D0282088A9C400B5F316 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					0406D02F2088A9C400B5F316 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					0406D0472088A9C400B5F316 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0406D02F2088A9C400B5F316;
+					};
+					0406D0522088A9C400B5F316 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0406D02F2088A9C400B5F316;
+					};
+				};
+			};
+			buildConfigurationList = 0406D02B2088A9C400B5F316 /* Build configuration list for PBXProject "GHImagePicker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0406D0272088A9C400B5F316;
+			productRefGroup = 0406D0312088A9C400B5F316 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0406D02F2088A9C400B5F316 /* GHImagePicker */,
+				0406D0472088A9C400B5F316 /* GHImagePickerTests */,
+				0406D0522088A9C400B5F316 /* GHImagePickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0406D02E2088A9C400B5F316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0406D0402088A9C400B5F316 /* LaunchScreen.storyboard in Resources */,
+				0406D03D2088A9C400B5F316 /* Assets.xcassets in Resources */,
+				0406D03B2088A9C400B5F316 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0406D0462088A9C400B5F316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0406D0512088A9C400B5F316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04420141877637B84321471A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GHImagePickerTests/Pods-GHImagePickerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		05F350C509A312F07DEEEA30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GHImagePickerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27215ACF6883C080EA07121D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GHImagePicker/Pods-GHImagePicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48072141AB483BD2D68D4700 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GHImagePicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68B8AD81BF328E0C04EAB05A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GHImagePickerTests/Pods-GHImagePickerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B1EA63B7BE4AE4EDB78E668 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GHImagePickerUITests/Pods-GHImagePickerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A224B320A82C6403ABC16164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GHImagePicker/Pods-GHImagePicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA51DD6C490AD4868B0C07C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GHImagePickerUITests/Pods-GHImagePickerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0E15569D2579D1F38F73544 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GHImagePickerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0406D02C2088A9C400B5F316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0406D0682088B5F500B5F316 /* GHAssetImageGeneratorViewController.m in Sources */,
+				0406D0882088CDDA00B5F316 /* GHImgCCell.m in Sources */,
+				0406D07C2088BD7900B5F316 /* GHBaseCView.m in Sources */,
+				0406D0762088BC3700B5F316 /* GHBaseViewController.m in Sources */,
+				0406D07F2088BF1100B5F316 /* UIView+GHAdd.m in Sources */,
+				0406D0382088A9C400B5F316 /* ViewController.m in Sources */,
+				0406D06D2088BB8100B5F316 /* GHAssetImageGeneratorView.m in Sources */,
+				0406D0432088A9C400B5F316 /* main.m in Sources */,
+				0406D0792088BCFA00B5F316 /* GHBaseCCell.m in Sources */,
+				0406D0722088BBA900B5F316 /* GHBaseView.m in Sources */,
+				0406D0352088A9C400B5F316 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0406D0442088A9C400B5F316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0406D04D2088A9C400B5F316 /* GHImagePickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0406D04F2088A9C400B5F316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0406D0582088A9C400B5F316 /* GHImagePickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0406D04A2088A9C400B5F316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0406D02F2088A9C400B5F316 /* GHImagePicker */;
+			targetProxy = 0406D0492088A9C400B5F316 /* PBXContainerItemProxy */;
+		};
+		0406D0552088A9C400B5F316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0406D02F2088A9C400B5F316 /* GHImagePicker */;
+			targetProxy = 0406D0542088A9C400B5F316 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0406D0392088A9C400B5F316 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0406D03A2088A9C400B5F316 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0406D03E2088A9C400B5F316 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0406D03F2088A9C400B5F316 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0406D05A2088A9C400B5F316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0406D05B2088A9C400B5F316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0406D05D2088A9C400B5F316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEAE943FE580B0151A265F6B /* Pods-GHImagePicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GHImagePicker/lib/GHImage.pch";
+				INFOPLIST_FILE = GHImagePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.music.GHImagePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0406D05E2088A9C400B5F316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2611BD12F86CF9FB145495DA /* Pods-GHImagePicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GHImagePicker/lib/GHImage.pch";
+				INFOPLIST_FILE = GHImagePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.music.GHImagePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0406D0602088A9C400B5F316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D5724DC1B9ADF1918CFB45A /* Pods-GHImagePickerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GHImagePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.music.GHImagePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GHImagePicker.app/GHImagePicker";
+			};
+			name = Debug;
+		};
+		0406D0612088A9C400B5F316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8799773AB4C026DFAB7EE13 /* Pods-GHImagePickerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GHImagePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.music.GHImagePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GHImagePicker.app/GHImagePicker";
+			};
+			name = Release;
+		};
+		0406D0632088A9C400B5F316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABDA44B2933A4A4D29D89AC6 /* Pods-GHImagePickerUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GHImagePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.music.GHImagePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GHImagePicker;
+			};
+			name = Debug;
+		};
+		0406D0642088A9C400B5F316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F28BE08EE0151393F278B177 /* Pods-GHImagePickerUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GHImagePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.music.GHImagePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GHImagePicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0406D02B2088A9C400B5F316 /* Build configuration list for PBXProject "GHImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0406D05A2088A9C400B5F316 /* Debug */,
+				0406D05B2088A9C400B5F316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0406D05C2088A9C400B5F316 /* Build configuration list for PBXNativeTarget "GHImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0406D05D2088A9C400B5F316 /* Debug */,
+				0406D05E2088A9C400B5F316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0406D05F2088A9C400B5F316 /* Build configuration list for PBXNativeTarget "GHImagePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0406D0602088A9C400B5F316 /* Debug */,
+				0406D0612088A9C400B5F316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0406D0622088A9C400B5F316 /* Build configuration list for PBXNativeTarget "GHImagePickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0406D0632088A9C400B5F316 /* Debug */,
+				0406D0642088A9C400B5F316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0406D0282088A9C400B5F316 /* Project object */;
+}
