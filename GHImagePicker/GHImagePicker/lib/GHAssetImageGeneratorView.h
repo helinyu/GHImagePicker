@@ -15,5 +15,7 @@
 @property (nonatomic, strong, readonly) GHBaseView *thumbnailSquareView;
 @property (nonatomic, strong, readonly) UIImageView *currentImgView;
 @property (nonatomic, strong, readonly) GHBaseView *maskView;
+@property (nonatomic, strong, readonly) GHBaseView *bottomWrapView;
+@property (nonatomic, strong, readonly) UISlider *choiceSlider;
 
 @end

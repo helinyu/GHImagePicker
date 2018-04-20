@@ -28,6 +28,7 @@
 @property (nonatomic, strong) NSMutableArray<UIImage *> *mImgs;
 @property (nonatomic, strong) NSMutableArray<UIImage *> *mThumbNailImgs;
 @property (nonatomic, assign) CGFloat thumbNailLength;
+@property (nonatomic, assign) NSInteger currentIndex;
 
 @end
 
@@ -44,7 +45,6 @@ GH_DYNAMIC_VC_VIEW([GHAssetImageGeneratorView class]);
     [self.view.imgThumbnailCView registerClass:[GHImgCCell class] forCellWithReuseIdentifier:kAssetGeneratorThumbnailCIdnetifier];
     self.view.imgThumbnailCView.dataSource = self;
     self.view.imgThumbnailCView.delegate = self;
-    
 }
 
 - (void)configureWithVideoUrlString:(NSString *)videoUrlString showNum:(NSInteger)showNum type:(YDVideoSourceType)type then:(SelectUrlBlock)then {
@@ -72,6 +72,7 @@ GH_DYNAMIC_VC_VIEW([GHAssetImageGeneratorView class]);
     if (!_mThumbNailImgs) _mThumbNailImgs = @[].mutableCopy;
     if (!_mImgs) _mImgs = @[].mutableCopy;
     AVURLAsset *urlAsset = [AVURLAsset assetWithURL:self.videoUrl];
+    self.videoDuration = urlAsset.duration;
     self.imgGenerator = [AVAssetImageGenerator assetImageGeneratorWithAsset:urlAsset];
     NSInteger baseCount = self.videoDuration.value /self.showNum;
     for (NSInteger i = 0 ; i < self.showNum; i++) {
@@ -90,7 +91,33 @@ GH_DYNAMIC_VC_VIEW([GHAssetImageGeneratorView class]);
     CGFloat contentH = GH_SCREEN_HEIGHT - GH_BOTTOM_FIX -GH_TOP_LAYOUT_H;
     CGFloat showImgH = contentH -self.thumbNailLength;
     self.view.currentImgView.frame = CGRectMake(0.f, GH_TOP_FIX, contentW, showImgH);
-    self.view.imgThumbnailCView.frame = CGRectMake(0.F, GH_TOP_FIX+showImgH, contentW, self.thumbNailLength);
+    self.view.bottomWrapView.frame = CGRectMake(0.F, GH_TOP_FIX+showImgH, contentW, self.thumbNailLength);
+    self.view.imgThumbnailCView.frame = CGRectMake(0.f, 0.f, contentW, self.thumbNailLength);
+    
+    self.view.choiceSlider.frame = CGRectMake(0.f, 0.f, contentW, self.thumbNailLength);
+    [self.view.choiceSlider addTarget:self action:@selector(onSlideClick:) forControlEvents:UIControlEventValueChanged];
+    [self.view.choiceSlider setMinimumValue:0.f];
+    [self.view.choiceSlider setMaximumValue:self.videoDuration.value];
+    [self.view.choiceSlider setThumbImage:[self __choosenSliderThumbImage] forState:UIControlStateNormal];
+    [self.view.choiceSlider setValue:(self.videoDuration.value)/2 animated:YES];
+    NSInteger centerNum = self.mImgs.count/2;
+    NSInteger left = self.mImgs.count %2;
+    self.currentIndex = centerNum + left;
+    self.view.currentImgView.image = self.mImgs[self.currentIndex];
+}
+
+- (void)onSlideClick:(UISlider *)slider {
+    CGFloat timeACell = self.videoDuration.value /self.showNum;
+    NSInteger currentIndex = slider.value /timeACell;
+    NSLog(@"gh- slider value:%f, currentIndex:%zd",slider.value,currentIndex);
+    if (currentIndex >= self.showNum) {
+        return;
+    }
+
+    if (currentIndex != self.currentIndex) {
+        self.view.currentImgView.image = self.mImgs[currentIndex];
+        self.currentIndex = currentIndex;
+    }
 }
 
 - (void)__configureDataOfView {
@@ -101,10 +128,24 @@ GH_DYNAMIC_VC_VIEW([GHAssetImageGeneratorView class]);
    
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.view.imgThumbnailCView reloadData];
+        self.view.currentImgView.image = _mImgs.firstObject;
         [UIView animateWithDuration:0.5f animations:^{
             self.view.maskView.alpha = 0.f;
         }];
     });
+}
+
+- (UIImage *)__choosenSliderThumbImage {
+    CGFloat scale = [UIScreen mainScreen].scale;
+    CGSize imageSize = CGSizeMake(9.f, self.thumbNailLength);
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, scale);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextAddRect(ctx, CGRectMake(0, 0, imageSize.width, imageSize.height));
+    CGContextSetLineWidth(ctx, 2.0 * scale);
+    CGContextSetStrokeColorWithColor(ctx, [UIColor greenColor].CGColor);
+    CGContextSetFillColorWithColor(ctx, [UIColor clearColor].CGColor);
+    CGContextDrawPath(ctx, kCGPathFillStroke);
+    return UIGraphicsGetImageFromCurrentImageContext();
 }
 
 #pragma mark - collecitonview datasource & delegate
@@ -115,12 +156,21 @@ GH_DYNAMIC_VC_VIEW([GHAssetImageGeneratorView class]);
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     GHImgCCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kAssetGeneratorThumbnailCIdnetifier forIndexPath:indexPath];
-    cell.imgView.image = _mImgs[indexPath.item];
+    UIImage *img = _mImgs[indexPath.item];
+    [cell configureWithImg:img];
     return cell;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(self.thumbNailLength, self.thumbNailLength);
+    return CGSizeMake(self.thumbNailLength-1, self.thumbNailLength-1);
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    return 0.f;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+    return 0.f;
 }
 
 - (void)didReceiveMemoryWarning {

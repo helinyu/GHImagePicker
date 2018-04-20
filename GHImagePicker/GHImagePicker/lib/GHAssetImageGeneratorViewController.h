@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, YDVideoSourceType) {
 
 @interface GHAssetImageGeneratorViewController : GHBaseViewController
 
-typedef void (^SelectUrlBlock)(NSURL *videoFileURL, UIImage *choosenCover);
+typedef void (^SelectUrlBlock)(NSURL *videoURL, UIImage *choosenCover);
 - (void)configureWithVideoUrlString:(NSString *)videoUrlString showNum:(NSInteger)showNum sourceType:(YDVideoSourceType)sourceType then:(SelectUrlBlock)then;
 - (void)configureWithVideoUrl:(NSURL *)videoUrl showNum:(NSInteger)showNum sourceType:(YDVideoSourceType)sourceType then:(SelectUrlBlock)then;
 

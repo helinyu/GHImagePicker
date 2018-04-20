@@ -23,6 +23,7 @@
 		0406D07C2088BD7900B5F316 /* GHBaseCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D07B2088BD7900B5F316 /* GHBaseCView.m */; };
 		0406D07F2088BF1100B5F316 /* UIView+GHAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D07E2088BF1100B5F316 /* UIView+GHAdd.m */; };
 		0406D0882088CDDA00B5F316 /* GHImgCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406D0872088CDDA00B5F316 /* GHImgCCell.m */; };
+		0406D08A20897E8B00B5F316 /* 1524188922.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0406D08920897E8B00B5F316 /* 1524188922.mp4 */; };
 		2A97A393EEE4F3E3D50D59E9 /* libPods-GHImagePickerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE458E07F3996D1CA334AC8 /* libPods-GHImagePickerTests.a */; };
 		35C8B061F981C03AE7644F81 /* libPods-GHImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA1F8735CCCBC89DACE786A /* libPods-GHImagePicker.a */; };
 		4A55A49664439F405635460A /* libPods-GHImagePickerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D2F568A725418464F872E7 /* libPods-GHImagePickerUITests.a */; };
@@ -80,6 +81,7 @@
 		0406D07E2088BF1100B5F316 /* UIView+GHAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GHAdd.m"; sourceTree = "<group>"; };
 		0406D0862088CDDA00B5F316 /* GHImgCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHImgCCell.h; sourceTree = "<group>"; };
 		0406D0872088CDDA00B5F316 /* GHImgCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHImgCCell.m; sourceTree = "<group>"; };
+		0406D08920897E8B00B5F316 /* 1524188922.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1524188922.mp4; sourceTree = "<group>"; };
 		2611BD12F86CF9FB145495DA /* Pods-GHImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHImagePicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-GHImagePicker/Pods-GHImagePicker.release.xcconfig"; sourceTree = "<group>"; };
 		3CE458E07F3996D1CA334AC8 /* libPods-GHImagePickerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GHImagePickerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5724DC1B9ADF1918CFB45A /* Pods-GHImagePickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHImagePickerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GHImagePickerTests/Pods-GHImagePickerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				0406D0392088A9C400B5F316 /* Main.storyboard */,
 				0406D03C2088A9C400B5F316 /* Assets.xcassets */,
 				0406D03E2088A9C400B5F316 /* LaunchScreen.storyboard */,
+				0406D08920897E8B00B5F316 /* 1524188922.mp4 */,
 				0406D0412088A9C400B5F316 /* Info.plist */,
 				0406D0422088A9C400B5F316 /* main.m */,
 			);
@@ -366,6 +369,7 @@
 				0406D0402088A9C400B5F316 /* LaunchScreen.storyboard in Resources */,
 				0406D03D2088A9C400B5F316 /* Assets.xcassets in Resources */,
 				0406D03B2088A9C400B5F316 /* Main.storyboard in Resources */,
+				0406D08A20897E8B00B5F316 /* 1524188922.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

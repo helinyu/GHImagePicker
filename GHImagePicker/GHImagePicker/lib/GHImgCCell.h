@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong, readonly) UIImageView *imgView;
 
+- (void)configureWithImg:(UIImage *)img;
+
 @end

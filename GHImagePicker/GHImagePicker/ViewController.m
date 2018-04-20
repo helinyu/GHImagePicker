@@ -22,9 +22,11 @@
 }
 
 - (void)testImgPicker {
+
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"1524188922" ofType:@"mp4"];
     GHAssetImageGeneratorViewController *vc = [GHAssetImageGeneratorViewController new];
-    [vc configureWithVideoUrl:[NSURL URLWithString:@"http://ssl-ydqiniu.51yund.com/khbav9689792.mp4"] showNum:6 sourceType:YDVideoSourceTypeUrl then:^(NSURL *videoFileURL, UIImage *choosenCover) {
-        
+    [vc configureWithVideoUrl:[NSURL fileURLWithPath:path] showNum:6 sourceType:YDVideoSourceTypeUrl then:^(NSURL *videoFileURL, UIImage *choosenCover) {
+        NSLog(@" video file :%@",videoFileURL);
     }];
     [self presentViewController:vc animated:YES completion:nil];
 }

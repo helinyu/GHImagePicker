@@ -11,6 +11,7 @@
 @interface GHImgCCell ()
 
 @property (nonatomic, strong) UIImageView *imgView;
+@property (nonatomic, strong)  UILabel *textLabel;
 
 @end
 
@@ -20,9 +21,14 @@
     [super baseInitWithFrame:frame];
     
     self.imgView = [UIImageView new];
+    [self.contentView addSubview:self.imgView];
     self.imgView.frame = self.contentView.bounds;
     self.imgView.contentMode = UIViewContentModeScaleAspectFill;
     self.contentView.layer.masksToBounds = YES;
+}
+
+- (void)configureWithImg:(UIImage *)img {
+    self.imgView.image = img;
 }
 
 @end
